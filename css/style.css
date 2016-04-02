@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", arial, sans-serif;
+  background-color: white;
+  color: black;
+  font-size: 13pt;
+}
+
+.site-header {
+  position: fixed;
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.jumbotron {
+  background-color: white;
+  color: black;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.jumbotron-title {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 200;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.jumbotron-slogan {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+@keyframes scroll-prompt-animation {
+  0% {
+    top: 85%;
+  }
+  50% {
+    top: 90%;
+  }
+  100% {
+    top: 85%;
+  }
+}
+
+.scroll-prompt {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  font-size: 3rem;
+  animation-name: scroll-prompt-animation;
+  animation-duration: 3s;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+}
