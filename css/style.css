@@ -72,3 +72,25 @@ body {
   animation-delay: 0;
   animation-iteration-count: infinite;
 }
+
+.banner {
+  background-color: #EFEFEF;
+  padding: 2rem;
+}
+
+.banner-description {
+  display: inline-block;
+  width: 25%;
+}
+
+.banner-title {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.banner-content {
+  display: inline-block;
+  width: 75%;
+}
