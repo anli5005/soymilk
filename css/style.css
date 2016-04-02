@@ -72,3 +72,74 @@ body {
   animation-delay: 0;
   animation-iteration-count: infinite;
 }
+
+.banner {
+  background-color: #EFEFEF;
+  padding: 2rem;
+}
+
+.banner-description {
+  display: inline-block;
+  width: 25%;
+}
+
+.banner-title {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.banner-content {
+  display: inline-block;
+  width: auto;
+  padding-left: 3rem;
+}
+
+.flavor-list li {
+  position: relative;
+  display: block;
+  float: left;
+  border-right-color: rgba(0, 0, 0, 0.2);
+  border-right-style: solid;
+  border-right-width: 2px;
+  padding: 0 1rem;
+}
+
+.flavor-list li:last-child {
+  border-right-style: none;
+}
+
+.flavor-list li p {
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+}
+
+.flavor-circle {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 0 auto;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.tooltip {
+  position: absolute;
+  top: -50%;
+  right: 200vw;
+  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+  font-size: 14px;
+  width: 15em;
+  text-align: center;
+  padding: 0.5em;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 9999;
+}
+
+.tooltip.active {
+  right: 0;
+}
