@@ -81,7 +81,7 @@ body {
 
 .banner-description {
   display: inline-block;
-  width: 25%;
+  width: 25vw;
 }
 
 .banner-title {
@@ -147,4 +147,42 @@ body {
 
 .tooltip.active {
   right: 50%;
+}
+
+.feature-list {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.feature {
+  width: 15rem;
+  padding: 1rem;
+}
+
+.feature-circle {
+  background-color: white;
+  border-radius: 50%;
+  height: 11rem;
+  width: 11rem;
+  text-align: center;
+  line-height: 11rem;
+  font-size: 6rem;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
+  margin: 0 1rem 1rem 1rem;
+}
+
+.feature-title {
+  text-align: center;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.feature-description {
+  text-align: center;
+  width: 100%;
+  font-size: 1.25rem;
+  margin-top: 0.5em;
 }
